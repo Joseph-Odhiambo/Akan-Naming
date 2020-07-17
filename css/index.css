@@ -4,6 +4,7 @@
 }
 /* all about akan styling */
 .heading {
+    margin-top: 10px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 300;
@@ -21,3 +22,5 @@ body {
 /* cards styling section */
 
 /* styling the form section */
+
+/* footer styling section */
