@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 /* all about akan styling */
 .heading {
     text-align: center;
@@ -15,3 +19,5 @@ body {
 }
 
 /* cards styling section */
+
+/* styling the form section */
