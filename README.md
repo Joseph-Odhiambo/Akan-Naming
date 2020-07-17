@@ -59,8 +59,8 @@ Input example, the program compares the inputs with the conditions set for the i
 * 0 < Date >= 30.
 * 0 < Month >= 12
 * Gender Male or Female. <br/>  
-True value is output. Output example: **You were born on Sunday and Your Akan name is Yaw!** &nbsp If your gender is Male.<br/>
-True value is output. Output example: **You were born on Sunday and Your Akan name is  Yaa!** &nbsp If your gender is female.  
+True value is output. Output example: **You were born on Sunday and Your Akan name is Yaw!** &nbsp If your gender is Male for the year 2010.<br/>
+True value is output. Output example: **You were born on Sunday and Your Akan name is  Yaa!** &nbsp If your gender is female for the year 2010.  
 
 **Example**
 * century input -- 20
