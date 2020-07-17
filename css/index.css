@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+h2 {
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: greenyellow;
+}
 /* all about akan styling */
 .heading {
     margin-top: 10px;
