@@ -16,7 +16,7 @@ h2 {
     color: rgb(63, 14, 177); 
 }
 body {
-    background-image: url('/images/akan.jpg');
+    background-image: url("/images/akan.jpg");
     background-attachment: fixed;
     background-size: cover;
 }

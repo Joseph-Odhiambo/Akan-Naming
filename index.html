@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
   </head>
-  <body>
+  <body style="background-image: url(/images/akan.jpg);">
     <h2>WELCOME TO AKA NAMING</h2>
       <!-- all about Akan names -->
       <div class="container-fluid" style="margin: 20px,0; padding: 10px ; background-color: rgb(168, 168, 168); opacity: 0.9;">
@@ -50,6 +50,8 @@
         </div>
       </div>
 
+       <p id="results" style="color: white;"> </p>
+
       <!-- form input for your Akan name -->
       <div class="overlay">
         <div class="container bg-light" style="margin-top: 40px;">
@@ -57,11 +59,26 @@
           <form name="myForm" class="form" onsubmit="validate();" style="padding-bottom: 15px;">
             <div class="form-group">
               <label for="number">Year of Birth:</label>
-              <input type="number" class="form-control" id="year" placeholder="Enter your year of birth,example: 2020 if born 2020..." name="year" required min="1900" max="2020">
+              <input type="number" class="form-control" id="year" placeholder="Enter your year of birth,example: 2020 if born 2020..." name="year" required min="1862" max="2020">
             </div>
             <div class="form-group">
               <label for="month">Month of Birth:</label>
-              <input type="number" class="form-control" id="month" placeholder="Enter your birth month, examle: 01 for January..." name="month" required min="1" max="12">
+              <select id="month" class="form-control" type="number" name="month">
+                <option selected>Chose birth month....</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <!-- <input type="number" class="form-control" id="month" placeholder="Enter your birth month, examle: 01 for January..." name="month" required min="1" max="12"> -->
             </div>
             <div class="form-group">
               <label for="date">Date of Birth:</label>
@@ -84,21 +101,24 @@
             <button type="reset" class="btn btn-primary" onclick="findName();">Reset</button>
             <br>
           </form>
-          <p id="results"> </p>
+         
         </div>
     </div>
     <!-- page footer for more inquieries and comments -->
-    <footer class="page-footer " style="background-color: rgb(12, 6, 6); color: blanchedalmond;">
+    <footer class="page-footer " style="background-color: rgb(12, 6, 6); color: blanchedalmond; margin-top: 20px; text-align: center;">
         <div class="footer-copyright text-center py-3">Copyright © 2020:
           <a href="https://github.com/Joseph-Odhiambo"> Joseph-Odhiambo.</a>
         </div>
     </footer>
 
-    <!-- Optional JavaScript -->
+    
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!-- External JavaScript sheet-->
     <script src="/js/myScript.js"></script>
   </body>
 </html>
