@@ -11,7 +11,7 @@ var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 // input vadidation
 function validate() {
   var genders = document.getElementsByName("gender");
-  if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100 || document.myForm.year.value <=1862) {
+  if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2020 || document.myForm.year.value <=1862) {
      alert( "Please provide a valid year of birth! eg 2019" );
      document.myForm.year.focus() ;
      return false;
@@ -22,8 +22,8 @@ function validate() {
      document.myForm.month.focus() ;
      return false;
   }
-  else if( document.myForm.date.value == "" || isNaN( document.myForm.month.value ) || 
-  document.myForm.month.value.length != 2|| document.myForm.date.value > 31 || document.myForm.date.value <= 0) {
+  else if( document.myForm.date.value == "" || isNaN( document.myForm.date.value ) || 
+  document.myForm.date.value.length != 2|| document.myForm.date.value > 31 || document.myForm.date.value <= 0) {
      alert( "Please provide a valid date that you were born in!" );
      document.myForm.day.focus() ;
      return false;
@@ -55,8 +55,10 @@ function calculateDayValue(){
   }
   
   // counting day-match for two section of male and female
-  var output = document.getElementById("results");
-  
+
+  // document.getElementById("results").innerHTML;
+
+
   function getGender(){
     var genders = document.getElementsByName("gender");
     if(genders[0].checked == true){
@@ -68,6 +70,8 @@ function calculateDayValue(){
     else{
       return false;
     }
+
+
     switch(gender){
       case "male":
         if (dayValue == 1){
@@ -118,6 +122,7 @@ function calculateDayValue(){
             
     }
   }
+
   function findName(){
     dayValue = calculateDayValue();
     getGender();
