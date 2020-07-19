@@ -1,4 +1,4 @@
-# Akan-Nameing
+# Akan-Naming
 
 # Author
 
