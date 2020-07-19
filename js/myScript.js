@@ -13,7 +13,7 @@ var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 function validate() {
   var genders = document.getElementsByName("gender");
   if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2020 || document.myForm.year.value <=1862) {
-    alert( "Please provide a valid year of birth! eg 1962" );
+    alert( "Please provide a valid year of birth! eg 1862" );
      document.myForm.year.focus() ;
      return false;
   }
